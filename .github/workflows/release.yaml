@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
     steps:
       - name: Setup Node
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v3
         with:
           check-latest: true
           node-version: ${{ matrix.node }}
@@ -74,7 +74,7 @@ jobs:
       'refs/heads/master' && github.repository == 'hertzg/node-net-keepalive' }}
     steps:
       - name: Setup Node
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v3
         with:
           node-version: lts/*
       - name: Checkout
